@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1f1f1f;
+            color: #ccc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            opacity: 0;
+            animation: fadeIn 0.3s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background-color: #262626;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+        header {
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 3rem;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #888;
+            margin: 0;
+        }
+        header p a {
+            color: #888;
+            text-decoration: none;
+        }
+        header p a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        h2 {
+            color: #3498db;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: #3498db;
+        }
+        h3 {
+            color: #888;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+        ul li {
+            margin-bottom: 8px;
+            color: #bbb;
+        }
+        footer {
+            text-align: center;
+            color: #888;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(-45deg, #1a1a1a, #000000, #3498db, #262626, #2c3e50);
+            background-size: 400% 400%;
+            animation: gradient 8s ease infinite;
+            z-index: 0;
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <div class="container">
+        <header>
+            <div class="mario"></div>
+            <h1>Jorge Guerreiro de Amorim</h1>
+            <p>E-mail: jguerreiroamo@gmail.com | LinkedIn: <a href="https://www.linkedin.com/in/jorge-guerreiro-1004ab230/" target="_blank">linkedin.com/in/jorge-guerreiro-1004ab230</a> | Telefone: +55 16 99112-2937</p>
+        </header>
+        
+        <section>
+            <h2>Sobre Mim</h2>
+            <p>Atualmente cursando Engenharia de Software na UNIFACEF, onde estou no segundo semestre. Concluí o curso técnico integrado ao ensino médio em Eletrônica na ETEC Dr. Júlio Cardoso. Possuo experiência como Analista de Suporte Técnico na Usina de Laticínios Jussara S/A, onde desenvolvi habilidades em banco de dados SQL e suporte técnico a programas internos. Sou apaixonado por programação, tendo algum conhecimento em JavaScript, HTML e CSS mas sempre querendo descobrir coisas novas.</p>
+        </section>
+        
+        <section>
+            <h2>Experiência Profissional</h2>
+            <div>
+                <h3>Usina de Laticinios Jussara S/A</h3>
+                <p><em>Analista de suporte técnico</em> | Período: (07/2024 - atual)</p>
+                <p>Este emprego representou o início da minha jornada como programador. Durante esse período, desenvolvi um profundo conhecimento em bancos de dados, com foco especial em SQL. Fui encarregado de resolver questões dos funcionários relacionadas ao banco de dados, além de prestar suporte a programas como o CHB e outras soluções desenvolvidas internamente.</p>
+            </div>
+            <div>
+                <h3>Matriz Copiadoras</h3>
+                <p><em>Técnico em manutenção de equipamentos de informática</em> | Período: (07/2024 - atual)</p>
+                <p>Durante meu emprego anterior, adquiri um profundo conhecimento em eletrônica, com ênfase significativa em impressoras a laser e redes de computadores. Esta experiência foi fundamental para meu desenvolvimento profissional, proporcionando um aprendizado valioso sobre aparelhos eletrônicos em geral.</p>
+            </div>
+            <div>
+                <h3>Hunifrio Ar Condicionado</h3>
+                <p><em>Técnico mecânico em ar condicionado</em> | Período: (07/2024 - atual)</p>
+                <p>No meu primeiro emprego com carteira assinada, adquiri valiosos aprendizados. Um dos aspectos que mais valorizei foi o atendimento ao cliente, especialmente durante minhas visitas diárias para instalação de ar-condicionado. Além disso, obtive um profundo entendimento sobre o funcionamento de ar-condicionado, cortinas de ar, ventiladores e climatizadores, além de elétrica residencial e eletrônica.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Cursos</h2>
+            <div>
+                <h3>JavaScript básico | Curso em vídeo</h3>
+                <p>Nesse curso aprendi o básico de JavaScript, foi minha base sobre o assunto e onde me apaixonei pela linguagem. No curso de JavaScript básico lecionado pelo professor Gustavo Guanabara, foram tratados os seguintes assuntos: O que é JavaScript e sua história; Variáveis; funcões; objetos; entre outros.</p>
+            </div>
+            <div>
+                <h3>Hardware | Curso em vídeo</h3>
+                <p>Nesse curso eu aprendi sobre o funcionamento de um computador por inteiro. Desde como é montado até como cada parte em específico funciona. Fiz esse curso para entender melhor a máquina que uso no meu ambiente de trabalho.</p>
+            </div>
+            <div>
+                <h3>JavaScript Basics for Beginners | Udemy - Mosh Hamedani</h3>
+                <p>Nesse curso eu me aprofundei um pouco mais no JavaScript, me ajudou a compreender assuntos pendentes sobre o curso JavaScript básico do Curso em vídeo. Esse curso é lecionado por Mosh Hamedani, completamente em inglês. Aprendi mais funções, como usa-las e revisei as principais.</p>
+            </div>
+            <div>
+                <h3>Inglês | EETC Torquato Caleiro</h3>
+                <p>Nesse curso aprofundei meu aprendizado da lingua inglesa.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Habilidades Técnicas</h2>
+            <ul>
+                <li>Desenvolvimento em Backend</li>
+                <li>Banco de Dados SQL</li>
+                <li>JavaScript</li>
+                <li>CSS e HTML</li>
+                <li>Atendimento ao cliente</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Português - Fluente</li>
+                <li>Inglês - Intermediário</li>
+                <li>Espanhol - Básico</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
